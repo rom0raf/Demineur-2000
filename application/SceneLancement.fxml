@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="fond" fx:id="fond" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerSceneLancement">
+   <children>
+      <Button fx:id="bouton_jouer" layoutX="20.0" layoutY="627.0" mnemonicParsing="false" onAction="#clickJouer" prefHeight="79.0" prefWidth="560.0" text="Jouer">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Pane fx:id="panel_titre" prefHeight="170.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="titre" alignment="CENTER" prefHeight="170.0" prefWidth="600.0" text="Demineur 2000">
+               <font>
+                  <Font size="80.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pane_boutons" layoutX="400.0" layoutY="291.0" prefHeight="153.0" prefWidth="111.0">
+         <children>
+            <RadioButton fx:id="boutonExpert" layoutX="3.0" layoutY="83.0" mnemonicParsing="false" onAction="#clickExpert" text="Expert">
+               <toggleGroup>
+                  <ToggleGroup fx:id="dificulte" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="boutonIntermediaire" layoutX="2.0" layoutY="54.0" mnemonicParsing="false" onAction="#clickIntermediaire" text="Intermediaire" toggleGroup="$dificulte" />
+            <RadioButton fx:id="debutantBouton" layoutX="2.0" layoutY="26.0" mnemonicParsing="false" onAction="#clickDebutant" text="Débutant" toggleGroup="$dificulte" />
+            <RadioButton fx:id="boutonPersonnalise" layoutX="4.0" layoutY="113.0" mnemonicParsing="false" onAction="#clickPersonnalise" text="Personnalisé" toggleGroup="$dificulte" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane_informations" layoutX="60.0" layoutY="268.0" prefHeight="186.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="25.0" layoutY="25.0" text="Hauteur: " textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="hauteur" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="17.0" prefHeight="46.0" prefWidth="54.0" text="0" />
+            <Label fx:id="largeur" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="69.0" prefHeight="46.0" prefWidth="54.0" text="0" />
+            <Label layoutX="25.0" layoutY="77.0" text="Largeur:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="132.0" text="Bombes:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="bombes" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="124.0" prefHeight="46.0" prefWidth="54.0" text="0" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

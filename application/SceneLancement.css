@@ -1,0 +1,40 @@
+#fond {
+    -fx-background-color: #F5F5F5;
+}
+
+#bouton_jouer {
+    -fx-background-color: #66b95f;
+    -fx-border-color: black;
+    -fx-border-radius: 10 10 10 10, 10 10 10 10;
+}
+
+#titre {
+	-fx-underline: true;
+}
+
+#pane_boutons {
+	-fx-background-color: #66b95f;
+	-fx-border-color: black;
+    -fx-border-radius: 10 10 10 10, 10 10 10 10;
+}
+
+#pane_informations {
+	-fx-background-color: #66b95f;
+	-fx-border-color: black;
+    -fx-border-radius: 10 10 10 10, 10 10 10 10;
+}
+
+#hauteur {
+	-fx-border-color: black;
+    -fx-border-radius: 10 10 10 10, 10 10 10 10;
+}
+
+#largeur {
+	-fx-border-color: black;
+    -fx-border-radius: 10 10 10 10, 10 10 10 10;
+}
+
+#bombes {
+	-fx-border-color: black;
+    -fx-border-radius: 10 10 10 10, 10 10 10 10;
+}
